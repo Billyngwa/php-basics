@@ -19,7 +19,7 @@
 
             global $numberArray;
             foreach($numberArray as $index => $value){
-                echo "[Key = \n " . $index . "\n"  . ", Value = " . $value . "] , ";
+                echo "[Key = \n " . $index , "\n"  . ", Value = " . $value . "] , ";
             }
 
             return ;
