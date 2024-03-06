@@ -14,48 +14,11 @@
 
                 while ($stopper != $ran) {
                 global $counter;
-                echo "<table>
-                        <h1>Table Of No correspondence</h1>
-                        <thead>
-                            <tr>
-                                <th>N<sup>o</sup></th>
-                                <th>Generated Value</th>
-                                <th>Compared Value</th>
-                                <th>is equal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> $counter</td>
-                                <td> $ran</td>
-                                <td> $stopper</td>
-                                <td> false</td>
-                            </tr>
-                        </tbody>
-                    </table>", "<br>";
+              
                 $counter++;
                 $ran =  rand(pow(10, $digits-1), pow(10, $digits)-1);
              }
-             echo "<table>
-             <hr>
-             <h1>Table of correspondence</h1>
-             <thead>
-                 <tr>
-                     <th>N<sup>o</sup></th>
-                     <th>Generated Value</th>
-                     <th>Compared Value</th>
-                     <th>is equal</th>
-                 </tr>
-             </thead>
-             <tbody>
-                 <tr>
-                     <td> $counter</td>
-                     <td> $ran</td>
-                     <td> $stopper</td>
-                     <td> true</td>
-                 </tr>
-             </tbody>
-         </table>", "<br>";
+            
 
 
 

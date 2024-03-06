@@ -12,17 +12,30 @@
         $words = ["guazuti","Markzukerbeg","Bob-loco","Zutugil"
         ,"Noumboussie","Etiendem","Zutuhil","tzuts","merde!! am tired","she is bad merde!","zut-merde"];
 
-        foreach($words as $value){
-            if(str_contains($value,$zut) || str_contains($value,$merde)){
+        function detectWord($word){
+            global $zut;
+            global $merde;
+            if (strpos($word,$merde) !== false) {
+              if(strpos($word,$zut) !== false){
+                $newString = str_replace($zut,"***",$word);
+                $newStrin = str_replace($merde,"***",$word);
 
-                echo "string present $value <br>";
-                $outPutString = str_replace($zut, "***",$value);
-                $outPutStrin= str_replace($merde, "***",$value);
+                echo $newString . $newStrin;
+              }else{
+                $newString = str_replace($merde,"***",$word);
+                echo $newString;              }
+          }else if(strpos($word,$zut) !== false){
+            $newString = str_replace($zut,"***",$word);
+            echo $newString;
+          }else{
+            echo $word;
 
-                echo $outPutString, "<br>";
-                echo $outPutStrin, "<br>";
-            }
+          }
         }
+
+
+        detectWord("merde-zut");
+     
     ?>
 </body>
 </html>
