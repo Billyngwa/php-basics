@@ -17,19 +17,14 @@
               
                 $counter++;
                 $ran =  rand(pow(10, $digits-1), pow(10, $digits)-1);
+
              }
             
+             echo "found match afer : ", $counter, " tries <br>" ;
 
 
 
-          echo "Start of while loop <br>";
-
-          for($counter; $stopper!=$ran;$counter++){
-                echo "no match <br>";
-              $ran =  rand(pow(10, $digits-1), pow(10, $digits)-1);
-
-          }
-          echo "found match afer : ", $counter, " tries";
+     
     ?>
 </body>
 </html>

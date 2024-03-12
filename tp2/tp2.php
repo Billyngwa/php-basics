@@ -9,9 +9,6 @@
     <?php
         $zut = "zut";
         $merde = "merde";
-        $words = ["guazuti","Markzukerbeg","Bob-loco","Zutugil"
-        ,"Noumboussie","Etiendem","Zutuhil","tzuts","merde!! am tired","she is bad merde!","zut-merde"];
-
         function detectWord($word){
             global $zut;
             global $merde;
@@ -34,7 +31,7 @@
         }
 
 
-        detectWord("merde-zut");
+        detectWord("zut");
      
     ?>
 </body>
