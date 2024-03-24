@@ -11,18 +11,12 @@
             $stopper = rand(pow(10, $digits-1), pow(10, $digits)-1);
             $counter = 0;
             $ran =  rand(pow(10, $digits-1), pow(10, $digits)-1);
-
-
-
-
-          echo "Start of while loop <br>";
+            echo "Start of for loop <br>";
 
           for($counter; $stopper!=$ran;$counter++){
-                echo "no match <br>";
               $ran =  rand(pow(10, $digits-1), pow(10, $digits)-1);
-
           }
-          echo "found match afer : ", $counter, " tries";
-    ?>
+          echo "found ", $stopper,  " as ", $ran, " afer : ", $counter, " tries <br>" ;
+          ?>
 </body>
 </html>

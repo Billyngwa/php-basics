@@ -20,7 +20,7 @@
 
              }
             
-             echo "found match afer : ", $counter, " tries <br>" ;
+             echo "found ", $stopper,  " as ", $ran, " afer : ", $counter, " tries <br>" ;
 
 
 

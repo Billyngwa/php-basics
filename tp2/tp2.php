@@ -7,31 +7,20 @@
 </head>
 <body>
     <?php
-        $zut = "zut";
-        $merde = "merde";
-        function detectWord($word){
-            global $zut;
-            global $merde;
-            if (strpos($word,$merde) !== false) {
-              if(strpos($word,$zut) !== false){
-                $newString = str_replace($zut,"***",$word);
-                $newStrin = str_replace($merde,"***",$word);
+    
+        $words = ["zut","merde"];
 
-                echo $newString . $newStrin;
-              }else{
-                $newString = str_replace($merde,"***",$word);
-                echo $newString;              }
-          }else if(strpos($word,$zut) !== false){
-            $newString = str_replace($zut,"***",$word);
-            echo $newString;
-          }else{
-            echo $word;
+        function detectWord($phrase){
+            global $words;
+            foreach($words as $word){
+              $phrase = str_replace($word,"***",$phrase);
 
-          }
+            }
+          echo $phrase;
         }
 
 
-        detectWord("zut");
+        detectWord("merde-zut");
      
     ?>
 </body>
